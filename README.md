@@ -95,6 +95,11 @@ Directory | Files
 
 Permissions have been setup correctly allowing your main user write acess to the /home/crypto-data directories! Changing file or directory permissions after install will cause your YiiMP to not function correctly, you have been warned!!
 
+By default even though all stratum algos start on server start, the ports have been blocked by the firewall. To open a port type:
+```
+sudo ufw allow port number
+```
+
 From there your YiiMP Single Server installation is fully completed. You can now go to example.com/site/AdminPortal to access your admin section and start adding your coins. 
 
 #### 🔗 Commands
