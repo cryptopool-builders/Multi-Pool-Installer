@@ -20,9 +20,7 @@ Installation:
 Requires a fresh Ubuntu 16.04 installation.
 
 ```
-git clone githublink
-cd multipool
-bash start.sh
+
 ```
 
 ## ▶️ Usage
