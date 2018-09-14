@@ -9,7 +9,7 @@
 #########################################################
 
 if [ -z "$TAG" ]; then
-	TAG=v1.00
+	TAG=v1.0
 fi
 
 # Are we running as root?
@@ -31,14 +31,14 @@ if [ ! -d $HOME/multipool ]; then
 	git clone \
 		-b $TAG --depth 1 \
 ####		https://github.com/cryptopool-builders/ \ ####
-		$HOME/multipool \
+		$HOME/multipool/install \
 		< /dev/null 2> /dev/null
 
 	echo
 fi
 
 # Change directory to it.
-cd $HOME/multipool
+cd $HOME/multipool/install
 
 # Update it.
 if [ "$TAG" != `git describe` ]; then
@@ -52,4 +52,4 @@ if [ "$TAG" != `git describe` ]; then
 fi
 
 # Start setup script.
-start.sh
+cd $HOME/multipool/install/start.sh
