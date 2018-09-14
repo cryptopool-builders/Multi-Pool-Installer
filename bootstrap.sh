@@ -41,7 +41,7 @@ fi
 cd $HOME/multipool/install
 
 # Update it.
-if [ "$TAG" != `git describe` ]; then
+if [ "$TAG" != `git describe --tags` ]; then
 	echo Updating MultiPool Installer to $TAG . . .
 	git fetch --depth 1 --force --prune origin tag $TAG
 	if ! git checkout -q $TAG; then
@@ -52,4 +52,4 @@ if [ "$TAG" != `git describe` ]; then
 fi
 
 # Start setup script.
-$HOME/multipool/install/start.sh
+bash $HOME/multipool/install/start.sh
