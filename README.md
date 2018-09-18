@@ -15,7 +15,7 @@ All in one installer for your crypto-server needs.
 
 # Table of contents
 
-- [Installation](#installation)
+- [Installation](#Installation)
     - [Usage](#usage)
 - [YiiMP Single Server Install](#yiimp-single-server-install)
 - [YiiMP Multi-Server Install](#yiimp-multi-server-install)
