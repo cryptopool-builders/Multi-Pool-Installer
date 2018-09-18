@@ -13,6 +13,20 @@ All in one installer for your crypto-server needs.
 * CryptoNote-Nodejs
 * Generic faucet script
 
+# Table of contents
+
+- [Installation](#installation)
+    - [Usage](#usage)
+- [YiiMP Single Server Install](#yiimp-single-server-install)
+- [YiiMP Multi-Server Install](#yiimp-multi-server-install)
+- [NOMP Install](#nomp-install)
+- [MPOS Install](#mpos-install)
+- [CryptoNote-Nodejs Install](#cryptonote-nodejs-install)
+- [Generic Faucet Script](#generic-faucet-script)
+- [Credits](#credits)
+- [License](#license)
+- [Support](#support)
+
 ## 💾 Installation
 
 Installation:
@@ -129,30 +143,28 @@ The following two tables show you the perfered server setup for the multi-server
 
 Role | OS Version | Recommended Ram
 :--|:--|:-:
-Web Server | Ubuntu 16-18.04 | 2GB
-DB & Stratum Server | Ubuntu 16-18.04 | 4GB
+Web Server | Ubuntu 16.04 | 2GB
+DB & Stratum Server | Ubuntu 16.04 | 4GB
 Daemon Server | Ubuntu 16.04 only | 8GB+ 
  
  or 
  
 Role | OS Version | Recommended Ram
 :--|:--|:-:
-Web Server | Ubuntu 16-18.04 | 2GB
-DB Server | Ubuntu 16-18.04 | 2GB
-Stratum Server | Ubuntu 16-18.04 | 2GB
+Web Server | Ubuntu 16.04 | 2GB
+DB Server | Ubuntu 16.04 | 2GB
+Stratum Server | Ubuntu 16.04 | 2GB
 Daemon Server | Ubuntu 16.04 only | 8GB+ 
 
-It is also highly recommended to use a provider that offers private IP's between your servers. If your provider only offers public IP's there is an option to install wireguard so that your servers use a secure VPN tunnel for the backend connections. 
+It is also highly recommended to use a provider that offers private IP's between your servers. If your provider only offers public IP's you must install Wireguard (Installer provided). This will setup a secure VPN connection between your servers for the backend communication. 
 
-#### Not using private IP's or installing wireguard is a major security risk and leaves your pool very vulnerable to attacks.
+#### If installing wireguard do not modify the default private IP's that are provide. Installation will fail!
 
-Installation for the multi-server setup <b>MUST</b> be completed in the following order:
- * DB Server or DB/Stratum Combination Server
- * Web Server
- * Stratum Server if not combined with DB Server
- * Daemon Server(s)
+Just like with the single server install there must be a user account created. If you attempt to run the script under root, it will force you to create a new user account and log in to it.
 
-#### ✏️ After the completion of each server, you will be presented with the information that needs to be copied and then pasted when prompted during the next server install process. 
+After the user accounts are created on each server setup <b>MUST</b> begin on the server that is hosting your database. You do not need to run the installer individually on each server.  
+
+#### ✏️ During the setup process you will be prompted to enter the user name and password for each of your servers. This is required for the installer to be able to SSH in to each server to perform the installation tasks on that server. 
 
 
 ## 📦 NOMP Install
