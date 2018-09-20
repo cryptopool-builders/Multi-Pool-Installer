@@ -27,7 +27,7 @@ All in one installer for your crypto-server needs.
 - [License](#license)
 - [Support](#support)
 
-## 💾 Installation
+## Installation 💾 
 
 Installation:
 
