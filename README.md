@@ -18,7 +18,7 @@ All in one installer for your crypto-server needs.
 - [Installation](#---installation)
   * [Usage](#---usage)
 - [YiiMP Single Server Install](#---yiimp-single-server-install)
-  * [Commands](#---commands)
+  * [Commands](#🔗---commands)
 - [YiiMP Multi-Server Install](#---yiimp-multi-server-install)
 - [NOMP Install](#---nomp-install)
 - [MPOS Install](#---mpos-install)
