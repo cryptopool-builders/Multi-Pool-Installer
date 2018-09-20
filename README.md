@@ -13,6 +13,8 @@ All in one installer for your crypto-server needs.
 * CryptoNote-Nodejs
 * Generic faucet script
 
+## TOC
+
 - [Installation](#---installation)
   * [Usage](#---usage)
 - [YiiMP Single Server Install](#---yiimp-single-server-install)
