@@ -28,7 +28,6 @@ All in one installer for your crypto-server needs.
 - [License](#-license)
 - [Support](#-support)
 
-
 ## 💾 Installation 
 
 Installation:
@@ -100,12 +99,13 @@ Directory | Files
 /home/crypto-data/yiimp | General install location for YiiMP
 /home/crypto-data/yiimp/starts | screens and stratum sh files - you do not need to run these
 /home/crypto-data/yiimp/site | -
+/home/crypto-data/yiimp/site/web | New location for YiiMP web files
 /home/crypto-data/yiimp/site/backup | backup location for mysql DB
 /home/crypto-data/yiimp/site/configuration | New location of your serverconfig.php
 /home/crypto-data/yiimp/site/crons | New location of the `main:blocks:loop2` sh files
 /home/crypto-data/yiimp/site/log | New location for debug.log and your nginx server log
 /home/crypto-data/yiimp/site/stratum | New location for your stratum files
-/home/crypto-data/yiimp/site/web | New location for YiiMP web files
+/home/crypto-data/wallets | New location for wallets
 
 Permissions have been setup correctly allowing your main user write acess to the /home/crypto-data directories! Changing file or directory permissions after install will cause your YiiMP to not function correctly, you have been warned!!
 
@@ -136,7 +136,6 @@ yiimp
 ```
 and get to know those commands as well!
 
-
 ## 🤖 YiiMP Multi-Server Install
 
 The YiiMP Multi-Server Install is recommended for those that want to run larger public pools. This offers the most security and is a lot more complex on the setup. 
@@ -164,26 +163,101 @@ It is also highly recommended to use a provider that offers private IP's between
 
 Just like with the single server install there must be a user account created. If you attempt to run the script under root, it will force you to create a new user account and log in to it.
 
-After the user accounts are created on each server setup <b>MUST</b> begin on the server that is hosting your database. You do not need to run the installer individually on each server.  
+After the user accounts are created on each server, setup <b>MUST</b> begin on the server that is hosting your database. You do not need to run the installer individually on each server.  
 
 #### ✏️ During the setup process you will be prompted to enter the user name and password for each of your servers. This is required for the installer to be able to SSH in to each server to perform the installation tasks on that server. 
+
+Installation will take about 25 minutes to fully complete. You will get a message on the screen letting you know it has finished. 
+
+#### A server reboot is REQUIRED after the installer is completed to finalize the installation process!
+
+#### On first reboot it may take up to 1 minute before the cron screens auto-start. After waiting one minute type:
+```
+motd
+```
+
+#### To help make your server more secure we have changed the install locations and directory structure of YiiMP as follows:
+
+Directory | Files | Server
+:--|:-:|:--
+/home/crypto-data/yiimp | General install location for YiiMP | All
+/home/crypto-data/yiimp/starts | screens and stratum sh files - you do not need to run these | Web and Stratum
+/home/crypto-data/yiimp/site | - | Web and Stratum
+/home/crypto-data/yiimp/site/web | New location for YiiMP web files | Web
+/home/crypto-data/yiimp/site/backup | backup location for mysql DB | Web
+/home/crypto-data/yiimp/site/configuration | New location of your serverconfig.php | Web
+/home/crypto-data/yiimp/site/crons | New location of the `main:blocks:loop2` sh files | Web
+/home/crypto-data/yiimp/site/log | New location for debug.log and your nginx server log | Web
+/home/crypto-data/yiimp/site/stratum | New location for your stratum files | Stratum
+/home/crypto-data/wallets | New location for wallets | Daemon
+
+
+Permissions have been setup correctly allowing your main user write acess to the /home/crypto-data directories! Changing file or directory permissions after install will cause your YiiMP to not function correctly, you have been warned!!
+
+By default even though all stratum algos start on server start, the ports have been blocked by the firewall. To open a port type:
+```
+sudo ufw allow port number
+```
+You <b>MUST</b> also open the RPC Port number on the daemon server when adding new coins. Failing to open the port will result in a connection time out error.
+
+From there your YiiMP Multi Server installation is fully completed. You can now go to example.com/site/AdminPortal to access your admin section and start adding your coins. 
+
+#### 🔗 Commands
+
+To view a screen type:
+```
+screen -r main|loop2|blocks|debug
+```
+To detach from a screen type:
+```
+ctrl+a+d
+```
+To start, stop or restart main|loop2|blocks|debug type:
+```
+screens start|stop|restart main|loop2|blocks|debug
+```
+We also suggest that you type:
+```
+yiimp
+```
+and get to know those commands as well!
+
 
 
 ## 📦 NOMP Install
 
 The NOMP options install everything you need to run NOMP and gets your first coin installed. It is recommended to have at least 4GB ram in order to function properly. 
-Setup is automated after the following questions are answered:
 
+During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated. 
+
+#### To help make your server more secure we have changed the install locations and directory structure of NOMP as follows:
+
+Directory | Files
+:--|:-:
+/home/crypto-data/nomp | General install location for NOMP
+/home/crypto-data/nomp/starts | screens and stratum sh files - you do not need to run these
+/home/crypto-data/nomp/site | New location for NOMP files
+/home/crypto-data/nomp/site/website | Location of NOMP html files
+/home/crypto-data/wallets | New location for wallets
+
+Permissions have been setup correctly allowing your main user write acess to the /home/crypto-data directories! Changing file or directory permissions after install will cause your YiiMP to not function correctly, you have been warned!!
+
+By default all non web ports have been blocked by the firewall, with exception of the first default coin. To open any other ports type:
+```
+sudo ufw allow port number
+```
 
 ## 🐣 MPOS Install
 
 The MPOS options install everything you need to run MPOS and gets your first coin installed. It is recommended to have at least 4GB ram in order to function properly. 
-Setup is automated after the following questions are answered:
+
+During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated.  
 
 ## 🐛 CryptoNote-Nodejs Install
 
 The CryptoNote-Nodejs options install everything you need to run CryptoNote-Nodejs and gets your first coin installed. It is recommended to have at least 4GB ram in order to function properly. 
-Setup is automated after the following questions are answered:
+
+During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated.
 
 ## 📚 Generic faucet script
 
