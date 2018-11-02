@@ -4,7 +4,7 @@
 # Updated by cryptopool.builders for crypto use...
 # This script is intended to be run like this:
 #
-#   curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | sudo bash
+#   curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
 #
 #########################################################
 
