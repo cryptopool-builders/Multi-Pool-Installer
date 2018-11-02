@@ -52,4 +52,4 @@ if [ "$TAG" != `git describe --tags` ]; then
 fi
 
 # Start setup script.
-sudo bash $HOME/multipool/install/start.sh
+bash $HOME/multipool/install/start.sh
