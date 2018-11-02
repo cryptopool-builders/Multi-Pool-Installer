@@ -249,17 +249,23 @@ sudo ufw allow port number
 
 ## 🐣 MPOS Install
 
+This feature will be added at a later date.
+
 The MPOS options install everything you need to run MPOS and gets your first coin installed. It is recommended to have at least 4GB ram in order to function properly.
 
 During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated.  
 
 ## 🐛 CryptoNote-Nodejs Install
 
+This feature will be added at a later date.
+
 The CryptoNote-Nodejs options install everything you need to run CryptoNote-Nodejs and gets your first coin installed. It is recommended to have at least 4GB ram in order to function properly.
 
 During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated.
 
 ## 📚 Generic faucet script
+
+This feature will be added at a later date.
 
 The faucet options install everything you need to run your own faucet script and setup multiple coins on it. Each coin will have their own sub-site.
 Setup is automated after the following questions are answered:
