@@ -12,11 +12,6 @@ if [ -z "$TAG" ]; then
 	TAG=v1.0
 fi
 
-# Are we running as root?
-if [[ $EUID -ne 0 ]]; then
-	echo "This script must be run as root. Did you leave out sudo?"
-	exit
-fi
 
 # Clone the MultiPool repository if it doesn't exist.
 if [ ! -d $HOME/multipool ]; then
