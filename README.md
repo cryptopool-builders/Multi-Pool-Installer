@@ -35,7 +35,7 @@ Installation:
 Requires a fresh Ubuntu 16.04 installation.
 
 ```
-
+curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
 ```
 
 ## ▶️ Usage
