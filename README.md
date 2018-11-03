@@ -1,6 +1,8 @@
 
 # Ultimate Crypto-Server Setup Installer! 🚀
 
+##This is opened as a public beta - all features are not final!
+
 All in one installer for your crypto-server needs.
 
 **Ultimate Crypto-Server Setup Installer!** Automates most of the tedious tasks of the following releases:
