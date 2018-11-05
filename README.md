@@ -40,6 +40,14 @@ Requires a fresh Ubuntu 16.04 installation.
 curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
 ```
 
+Update:
+
+When a new release is made public updating is as simple as running the same command as above.
+
+```
+curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
+```
+
 ## ▶️ Usage
 
 If you try to run the installer as the root user, the installer will force you to create a user account and reboot in to it.
