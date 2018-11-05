@@ -301,6 +301,14 @@ The following forks have been used in the making of the script:
 
 ## 🎁 Support
 
+Join our active discord channel:
+
+https://discord.gg/UGbGvna
+
+Find our BitCoinTalk Thread at:
+
+https://bitcointalk.org/index.php?topic=4980079.0
+
 Donations for continued support of this script are welcomed at:
 
 * BTC 3DvcaPT3Kio8Hgyw4ZA9y1feNnKZjH7Y21
