@@ -9,12 +9,12 @@
 #########################################################
 
 if [ -z "$TAG" ]; then
-	TAG=v1.12
+	TAG=v1.13
 fi
 
 
 # Clone the MultiPool repository if it doesn't exist.
-if [ ! -d $HOME/multipool ]; then
+if [ ! -d "$HOME"/multipool ]; then
 	if [ ! -f /usr/bin/git ]; then
 		echo Installing git . . .
 		apt-get -q -q update
@@ -26,14 +26,14 @@ if [ ! -d $HOME/multipool ]; then
 	git clone \
 		-b $TAG --depth 1 \
 		https://github.com/cryptopool-builders/multipool_setup \
-		$HOME/multipool/install \
+		"$HOME"/multipool/install \
 		< /dev/null 2> /dev/null
 
 	echo
 fi
 
 # Change directory to it.
-cd $HOME/multipool/install
+cd "$HOME"/multipool/install
 
 # Update it.
 if [ "$TAG" != `git describe --tags` ]; then
@@ -47,4 +47,4 @@ if [ "$TAG" != `git describe --tags` ]; then
 fi
 
 # Start setup script.
-bash $HOME/multipool/install/start.sh
+bash "$HOME"/multipool/install/start.sh
