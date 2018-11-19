@@ -7,7 +7,8 @@
 #   curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
 #
 #########################################################
-
+whoami=`whoami`
+sudo chown -R $whomai $HOME/multipool/install/.git/
 if [ -z "$TAG" ]; then
 	TAG=v1.18
 fi
@@ -33,8 +34,6 @@ if [ ! -d "$HOME"/multipool ]; then
 fi
 
 # Set permission and change directory to it.
-whoami=`whoami`
-sudo chown -R $whomai $HOME/multipool/install/.git/
 cd "$HOME"/multipool/install
 
 # Update it.
