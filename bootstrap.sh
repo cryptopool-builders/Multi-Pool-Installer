@@ -9,7 +9,7 @@
 #########################################################
 
 if [ -z "$TAG" ]; then
-	TAG=v1.17
+	TAG=v1.18
 fi
 
 
@@ -32,7 +32,9 @@ if [ ! -d "$HOME"/multipool ]; then
 	echo
 fi
 
-# Change directory to it.
+# Set permission and change directory to it.
+whoami=`whoami`
+sudo chown -R $whomai $HOME/multipool/install/.git/
 cd "$HOME"/multipool/install
 
 # Update it.
