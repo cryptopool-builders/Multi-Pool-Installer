@@ -7,8 +7,6 @@
 #   curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
 #
 #########################################################
-whoami=`whoami`
-sudo chown -R $whomai $HOME/multipool/install/.git/
 if [ -z "$TAG" ]; then
 	TAG=v1.18
 fi
@@ -37,6 +35,7 @@ fi
 cd "$HOME"/multipool/install
 
 # Update it.
+sudo chown -R $USER $HOME/multipool/install/.git/
 if [ "$TAG" != `git describe --tags` ]; then
 	echo Updating MultiPool Installer to $TAG . . .
 	git fetch --depth 1 --force --prune origin tag $TAG
