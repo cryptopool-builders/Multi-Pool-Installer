@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o nounset
+set -o errexit
 #########################################################
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox
 # Updated by cryptopool.builders for crypto use...
@@ -8,7 +10,7 @@
 #
 #########################################################
 if [ -z "${TAG}" ]; then
-	TAG=v1.28
+	TAG=v1.29
 fi
 
 
