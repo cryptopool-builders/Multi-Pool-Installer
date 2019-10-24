@@ -95,7 +95,7 @@ After rebooting the server log back in to your user account. And you will be gre
        width="771" height="635">
 </p>
 
-#### On first reboot it may take up to 1 minute before the cron screens auto-start. After waiting one minute type:
+#### On first reboot it may take up to 10 minutes before the cron screens auto-start. After waiting ten minutes type:
 ```
 motd
 ```
