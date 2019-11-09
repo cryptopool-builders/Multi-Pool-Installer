@@ -34,7 +34,7 @@ All in one installer for your crypto-server needs.
 
 Installation:
 
-Requires a fresh Ubuntu 16.04 installation.
+Requires a fresh Ubuntu 16.04 or Ubuntu 18.04 installation.
 
 ```
 curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
@@ -158,18 +158,18 @@ The following two tables show you the perfered server setup for the multi-server
 
 Role | OS Version | Recommended Ram
 :--|:--|:-:
-Web Server | Ubuntu 16.04 | 2GB
-DB & Stratum Server | Ubuntu 16.04 | 4GB
-Daemon Server | Ubuntu 16.04 only | 8GB+
+Web Server | Ubuntu 16.04 or Ubuntu 18.04 | 2GB
+DB & Stratum Server | Ubuntu 16.04 or Ubuntu 18.04 | 4GB
+Daemon Server | Ubuntu 16.04 or Ubuntu 18.04 | 8GB+
 
  or
 
 Role | OS Version | Recommended Ram
 :--|:--|:-:
-Web Server | Ubuntu 16.04 | 2GB
-DB Server | Ubuntu 16.04 | 2GB
-Stratum Server | Ubuntu 16.04 | 2GB
-Daemon Server | Ubuntu 16.04 only | 8GB+
+Web Server | Ubuntu 16.04 or Ubuntu 18.04 | 2GB
+DB Server | Ubuntu 16.04 or Ubuntu 18.04 | 2GB
+Stratum Server | Ubuntu 16.04 or Ubuntu 18.04 | 2GB
+Daemon Server | Ubuntu 16.04 or Ubuntu 18.04 | 8GB+
 
 It is also highly recommended to use a provider that offers private IP's between your servers. If your provider only offers public IP's you must install Wireguard (Installer provided). This will setup a secure VPN connection between your servers for the backend communication.
 
