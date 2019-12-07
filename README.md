@@ -241,21 +241,23 @@ and get to know those commands as well!
 
 ## 📦 NOMP Install
 
-The NOMP options install everything you need to run NOMP and gets your first coin installed. It is recommended to have at least 4GB ram in order to function properly.
+The NOMP options install everything you need to run NOMP and gets your first coin installed. It is recommended to have at least 2GB ram in order to function properly.
 
-During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated.
+During the initial setup you will be asked similar questions as the YiiMP installer in addition you will also be asked for the first coin that you wish to have installed. After all the questions are answered setup will be fully automated until the coin installation where you will need to copy and paste the coind and coin-cli names.
 
 #### To help make your server more secure we have changed the install locations and directory structure of NOMP as follows:
 
 Directory | Files
 :--|:-:
 /home/crypto-data/nomp | General install location for NOMP
-/home/crypto-data/nomp/starts | screens and stratum sh files - you do not need to run these
-/home/crypto-data/nomp/site | New location for NOMP files
-/home/crypto-data/nomp/site/website | Location of NOMP html files
+/home/crypto-data/nomp/starts | required start files
+/home/crypto-data/nomp/core | New location for NOMP files
+/home/crypto-data/nomp/configuration | New location for NOMP config files
+/home/crypto-data/nomp/logs | New location for NOMP/Nginx log files
+/home/crypto-data/nomp/site/web | New Location of NOMP html files
 /home/crypto-data/wallets | New location for wallets
 
-Permissions have been setup correctly allowing your main user write acess to the /home/crypto-data directories! Changing file or directory permissions after install will cause your YiiMP to not function correctly, you have been warned!!
+Permissions have been setup correctly allowing your main user write acess to the /home/crypto-data directories! Changing file or directory permissions after install will cause your NOMP to not function correctly, you have been warned!!
 
 By default all non web ports have been blocked by the firewall, with exception of the first default coin. To open any other ports type:
 ```
