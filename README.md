@@ -251,7 +251,7 @@ Directory | Files
 :--|:-:
 /home/crypto-data/nomp | General install location for NOMP
 /home/crypto-data/nomp/starts | required start files
-/home/crypto-data/nomp/core | New location for NOMP files
+/home/crypto-data/nomp/core | New location for NOMP nodejs files
 /home/crypto-data/nomp/configuration | New location for NOMP config files
 /home/crypto-data/nomp/logs | New location for NOMP/Nginx log files
 /home/crypto-data/nomp/site/web | New Location of NOMP html files
