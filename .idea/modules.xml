@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Multi-Pool-Installer.iml" filepath="$PROJECT_DIR$/.idea/Multi-Pool-Installer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../multipool_setup/.idea/multipool_setup.iml" filepath="$PROJECT_DIR$/../multipool_setup/.idea/multipool_setup.iml" />
+    </modules>
+  </component>
+</project>
