@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Multi-Pool-Installer.iml" filepath="$PROJECT_DIR$/.idea/Multi-Pool-Installer.iml" />
       <module fileurl="file://$PROJECT_DIR$/../multipool_setup/.idea/multipool_setup.iml" filepath="$PROJECT_DIR$/../multipool_setup/.idea/multipool_setup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../multipool_yiimp_single/.idea/multipool_yiimp_single.iml" filepath="$PROJECT_DIR$/../multipool_yiimp_single/.idea/multipool_yiimp_single.iml" />
     </modules>
   </component>
 </project>

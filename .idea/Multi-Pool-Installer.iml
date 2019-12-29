@@ -5,5 +5,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="multipool_setup" />
+    <orderEntry type="module" module-name="multipool_yiimp_single" />
   </component>
 </module>
