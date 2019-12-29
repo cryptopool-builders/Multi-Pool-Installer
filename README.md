@@ -52,12 +52,14 @@ curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/
 
 You may run the installer under root or an existing account. If you already have a user account created on your server that account must already be part of the sudo group.
 
-After creating the new user account or updating your existing account, you MUST reboot the machine in order for the accounts permissions to be updated properly. 
+If you are running as root the installer will prompt you to create a new account.
 
 <p align="center">
   <img src="./.assets/naughty.png" alt="naughty"
        width="555" height="185">
 </p>
+
+After creating the new user account or updating your existing account, you MUST reboot the machine in order for the accounts permissions to be updated properly.
 
 After rebooting the server to your user to start the installer type:
 ```
