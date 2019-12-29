@@ -50,18 +50,16 @@ curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/
 
 ## ▶️ Usage
 
-So I just really realized my first line of instructions for the script is wrong and not clear. So I am updating it so going forward there are no issues. 
+You may run the installer under root or an existing account. If you already have a user account created on your server that account must already be part of the sudo group.
 
-You MUST initially run the installer under root. If you already have a user account created on your server you MUST  ```sudo su```  and drop to the root command line and run the above curl command. You MUST let the installer create a new user account for you. There are permission settings that are going on in the backend that NEEDS to be done before running the  ```mutipool```  command.
-
-After creating the new user you MUST reboot the machine in to the new account. If you are doing a multi server setup you MUST do this on each server. My time has become limited to how much I can update this FREE script. So if you need something changed or fixed, consider donating instead of complaining it doesnt work. 
+After creating the new user account or updating your existing account, you MUST reboot the machine in order for the accounts permissions to be updated properly. 
 
 <p align="center">
   <img src="./.assets/naughty.png" alt="naughty"
        width="555" height="185">
 </p>
 
-After rebooting the server to your new user to start the installer type:
+After rebooting the server to your user to start the installer type:
 ```
 multipool
 ```
