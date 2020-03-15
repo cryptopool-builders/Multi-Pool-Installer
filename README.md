@@ -15,6 +15,8 @@ All in one installer for your crypto-server needs.
 * CryptoNote-Nodejs
 * Generic faucet script
 
+## Live pool using CryptoPool Builders
+ - https://pool.pigychain.info
 ## TOC
 
 - [Installation](#-installation)
