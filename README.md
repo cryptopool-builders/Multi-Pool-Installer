@@ -1,3 +1,7 @@
+# Update regarding this repo and the future of it. As many of you know I have been gone for many months. Things were going great in my life and then tragedy stuck, and no I am not talking about COVID. Im not going to spin a sad story or give any other details other then, depression is a real thing. Anyone you know or yourself may suffer terribly from it. Don't ignore the signs, don't laugh it off, or take their word that they are ok if its a relative or friend because they are not ok. And don't go at it alone if you suffer silently from it. For those that feel the desire this all doantion addresses have been updated. 
+
+# There are several forks of this repo now that are being maintained by some great people and plenty of help on the discord. Be safe eveyone. - CPB
+
 
 # Ultimate Crypto-Server Setup Installer! 🚀
 
@@ -318,8 +322,8 @@ https://bitcointalk.org/index.php?topic=4980079.0
 
 Donations for continued support of this script are welcomed at:
 
-* BTC 3DvcaPT3Kio8Hgyw4ZA9y1feNnKZjH7Y21
-* BCH qrf2fhk2pfka5k649826z4683tuqehaq2sc65nfz3e
-* ETH 0x6A047e5410f433FDBF32D7fb118B6246E3b7C136
+* BTC 3LegHBKdAmcdN9usBae5UPVnQWk5vCrUDy
+* BCH 1C5b876B7ZJo6P1hjqKGBmorYoY8RuAm7D
+* ETH 0x7BAEaae15De37A93e5Bcf27622F2E65ede90A35C
 * ETC 0xc5C3E017087adB10C2FE085cF8eA9b1c9867Ff28
-* LTC MLS5pfgb7QMqBm3pmBvuJ7eRCRgwLV25Nz
+* LTC MAutGukgacY74Pv38k4DGs91RGTDbmUSmQ
