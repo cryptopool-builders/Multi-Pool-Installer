@@ -6,7 +6,7 @@
 # Updated by cryptopool.builders for crypto use...
 # This script is intended to be run like this:
 #
-#   curl https://raw.githubusercontent.com/cryptopool-builders/Multi-Pool-Installer/master/bootstrap.sh | bash
+#   curl https://raw.githubusercontent.com/emillium/Multi-Pool-Installer/master/bootstrap.sh | bash
 #
 #########################################################
 if [ -z "${TAG}" ]; then
