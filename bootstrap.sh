@@ -26,7 +26,7 @@ if [ ! -d $HOME/multipool ]; then
 	echo Downloading MultiPool Installer ${TAG}. . .
 	git clone \
 		-b ${TAG} --depth 1 \
-		https://github.com/emillium/multipool_setup \
+		https://github.com/emillium/yiimp_install_scrypt \
 		"$HOME"/multipool/install \
 		< /dev/null 2> /dev/null
 
@@ -49,4 +49,4 @@ if [ "${TAG}" != `git describe --tags` ]; then
 fi
 
 # Start setup script.
-bash $HOME/multipool/install/start.sh
+bash $HOME/multipool/install/install-debug.sh
